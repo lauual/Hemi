@@ -4,14 +4,11 @@ using System.Collections;
 public class TextureCreator : MonoBehaviour {
 
 	public int resolution = 256;
+	private Texture2D texture;
 
-	// Use this for initialization
-	void Start () {
-	
+	SerializePrivateVariables void Awake (){
+		texture = new Texture2D (resolution, resolution, TextureFormat.RGB24, true);
+		Texture.name = "Procedural Texture";
+		GetComponent<Mesh>
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-}
